@@ -33,7 +33,7 @@ def train(epochs, model, criterion, optim, device, train_loader):
 
         print(f"Epoch: {epoch+1}, Loss: {training_loss/len(train_loader):.4f}")
 
-    torch.save(model.state_dict(), "resnet_gender_model.pth")
+    torch.save(model.state_dict(), "../resnet_gender_model.pth")
 
 
 if __name__ == "__main__":
